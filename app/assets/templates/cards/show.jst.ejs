@@ -1,0 +1,10 @@
+<div class="card-div" data-card-id="<%= card.escape('id') %>" 
+		 data-card-list-id="<%= card.escape('list_id') %>">
+		 <div class="fright">
+			 	<span data-toggle="popover" data-placement="right" 
+				  data-content="<button class='btn btn-warning btn-xs'>DELETE</button>"
+					
+					class="glyphicon glyphicon-remove-sign card-menu"></span>
+		</div>
+	<%= card.escape('title') %>
+</div>

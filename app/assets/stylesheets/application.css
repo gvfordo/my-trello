@@ -1,0 +1,283 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 8px;
+  background-color: #daf1fb !important;
+	color: #949494;
+}
+
+span.title {
+  font-weight: 700;
+  font-size: 28px;
+  position: relative;
+  top: 7px;
+  font-style: italic;
+}
+
+input#logout, input#logout{
+  background-color: white;
+}
+
+div#content {
+  margin:0px auto;
+  width: auto;
+  
+  padding: 10px;
+  margin-bottom: 10px;
+  
+  overflow-x: scroll;
+}
+
+.white_area {
+  overflow: scroll;
+  background-color: white;
+  border: 1px dotted black;
+  border-radius: 4px;
+  moz-border-radius: 4px;
+  padding: 30px;
+}
+
+div.board_members {
+  margin-left: 22px;
+}
+
+button.newList {
+  margin: 10px 0;
+}
+
+button#deleteBoard {
+  margin: 10px 22px;
+}
+
+a {
+  text-decoration: none !important;
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: none !important;
+  padding-left: 0;
+  margin: 0;
+}
+
+
+li {
+  padding-top: 2px;
+  padding-left: 0;
+}
+
+
+.hidden {
+	display: none;
+}
+
+
+button, input[type="submit"] {
+  font-weight: 800;
+  background: transparent;
+  border: 1px dotted;
+  border-radius: 8px;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: transparent;
+  color: blue;
+}
+
+/* Le glorious css */
+
+/* utility styles */
+
+.fleft {
+	float: left;
+}
+
+.fright {
+	float: right;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.clear-div {
+	clear: both;
+}
+
+.centered {
+	text-align: center;
+}
+
+/* boards css */
+
+.board {
+	width: 200px;
+	min-height: 60px;
+	float: left;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 5px;
+	padding-top: 45px;
+	margin: 10px;
+	background-color: #24C0E3;
+	cursor: pointer;
+	text-align: center;
+}
+
+.board:hover {
+	background-color: #35A0B8;
+}
+
+.board-title {
+	text-align: center;
+	font-size: 100%;
+	font-family: verdana;
+	color: white;
+	text-transform: uppercase;
+}
+
+.board-show-title {
+	color: #333;
+}
+
+.new-button {
+	margin: 0px 15px 15px 15px;
+}
+
+.new-button:hover {
+	background-color: #333;
+	color: white;
+	border-style: solid;
+}
+
+.board-wrapper {
+	border-radius: 5px;
+	margin: 5px;
+	padding: 10px;
+	min-height: 400px;
+}
+
+.board-form {
+	padding-top: 25px;
+	min-height: 80px;
+}
+
+.new-board-form-text {
+	font-size: 75%;
+	color: #797979;
+	font-weight: bold;
+}
+
+.new-board-form {
+	margin: 0px;
+}
+
+/* List Styling */
+
+.list-div {
+	width: 200px;
+	float: left;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin: 10px;
+	background-color: white;
+	box-shadow: 1px 4px 5px #ccc;
+	
+}
+
+.list-title {
+	margin: 5px 0px;
+}
+
+.new-list-form {
+	padding: 5px;
+	margin: 0px;
+}
+
+.btn-create {
+	width: 100%;
+}
+
+
+/* Card Styling */
+
+.list-cards {
+	min-height: 15px;
+}
+
+.remove-card { 
+	cursor: pointer;
+}
+
+.card-div {
+	padding: 5px;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 5px #ccc;
+	margin: 5px;
+	border-radius: 3px;
+	background-color: #2b3e50;
+}
+
+.add-card {
+	margin-top: 5px;
+	font-size: 85%;
+	color: #949494;
+}
+
+.add-card:hover {
+	background-color: #949494;
+	color: #fff;
+	cursor: pointer;
+}
+
+.temp-card {
+	border: 1px dashed #ccc;
+	border-radius: 3px;
+	height: 30px;
+	margin: 5px;
+}
+
+.temp-list {
+	border: 2px dashed #ccc;
+	border-radius: 3px;
+	height: 100px;
+	margin: 10px;
+	padding: 5px;
+	background-color: #eee;
+	width: 200px;
+	float: left;
+
+}
+
+.ui-sortable-helper > .card-div, .ui-sortable-helper.list-div {
+	background-color: #057BCA;
+	transform:rotate(4deg);
+	-ms-transform:rotate(4deg); /* IE 9 */
+	-webkit-transform:rotate(4deg); /* Opera, Chrome, and Safari */
+	}
+}
+
+.ui-sortable-helper h2 {
+	color: white;
+}
+
+/* Card Modal */
+
+.card-modal {
+	width: 700px;
+	min-height: 300px;
+}

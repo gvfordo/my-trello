@@ -1,0 +1,17 @@
+<h1 class="inline"> My Boards </h1><button id="new-board" class="inline new-button">New Board</button>
+<div class="clear-div"></div>
+<% if (boards.length < 1){ %>
+	
+	<p>You don't have any boards yet!</p>
+<% } else { %>
+	<div class="boards-div">
+	<% boards.forEach(function(board){ %>
+		<div class="board" data-id="<%= board.get('id') %>">
+			<p class="board-title" data-id="<%= board.get('id') %>"><%= board.get('title') %></p>
+		</div>
+	<% }) %>
+	</div>
+<% } %>
+
+
+

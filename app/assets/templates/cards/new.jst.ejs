@@ -1,0 +1,10 @@
+
+<form class="new-card-form">
+	<input type="hidden" name="card[list_id]" value="<%= list.get('id') %>">
+	<input type="hidden" name="card[rank]" value="<%= rank %>" >
+	<label>
+		Card Title <p class="fright remove-form"><a href="#" class="remove-form">X</a></p>
+	<input class="form-control" type="text" name="card[title]" />
+	</label>
+	<button class="btn btn-primary btn-sm btn-create">Create Card</button>
+</form>
